@@ -1,8 +1,11 @@
 package com.example.olexandr.stroj_calc;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -26,6 +29,17 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        setCollapseTitle(getBaseContext());
+    }
+
+
+
+
+    private void setCollapseTitle(Context context){
+        CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout)findViewById(R.id.main_collapsing);
+        collapsingToolbarLayout.setTitle(getTitle());
+        collapsingToolbarLayout.setExpandedTitleColor(ContextCompat.getColor(context, R.color.primary_text));
     }
 
     @Override
