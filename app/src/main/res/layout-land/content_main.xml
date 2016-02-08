@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_size_CM"
         android:layout_marginLeft="@dimen/activity_content_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin">
+        android:layout_marginTop="@dimen/activity_content_margin">
 
         <TableRow>
 
@@ -36,8 +36,8 @@
                 android:id="@+id/tv_x_CM"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/standrt_margin"
-                android:layout_marginLeft="@dimen/standrt_margin"
+                android:layout_marginRight="@dimen/standart_margin"
+                android:layout_marginLeft="@dimen/standart_margin"
                 android:text="X:"
                 android:textColor="@color/secondary_text"
                 android:textSize="34sp" />
@@ -46,7 +46,7 @@
                 android:id="@+id/et_x_CM"
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/standrt_margin"
+                android:layout_marginRight="@dimen/standart_margin"
                 android:inputType="number"
                 android:maxLength="4"
 
@@ -56,7 +56,7 @@
                 android:id="@+id/tv_y_CM"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/standrt_margin"
+                android:layout_marginRight="@dimen/standart_margin"
                 android:text="Y:"
                 android:textColor="@color/secondary_text"
                 android:textSize="34sp" />
@@ -65,7 +65,7 @@
                 android:id="@+id/et_y_CM"
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/standrt_margin"
+                android:layout_marginRight="@dimen/standart_margin"
                 android:inputType="number"
                 android:maxLength="4"
 
@@ -75,7 +75,7 @@
                 android:id="@+id/tv_z_CM"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/standrt_margin"
+                android:layout_marginRight="@dimen/standart_margin"
                 android:text="Z:"
                 android:textColor="@color/secondary_text"
                 android:textSize="34sp" />
@@ -101,7 +101,7 @@
         android:layout_below="@+id/tableLayout"
         android:layout_marginLeft="@dimen/activity_content_margin"
         android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_content_margin"
         android:orientation="horizontal"
         android:weightSum="2">
 
