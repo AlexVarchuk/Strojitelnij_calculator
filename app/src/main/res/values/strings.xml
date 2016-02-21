@@ -31,4 +31,8 @@
     <string name="price_cement">Ціна цементу [кг]:</string>
     <string name="price_sand">Ціна піску [кг]</string>
     <string name="price_filler">Ціна наповнювача [кг]</string>
+    <string name="water">Води [л]: ~ </string>
+    <string name="cement">Цементу [кг]: </string>
+    <string name="sand">Піска [кг]: </string>
+    <string name="filler">Наповнювача [кг]: </string>
 </resources>

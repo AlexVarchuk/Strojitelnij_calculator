@@ -3,373 +3,445 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_concrete">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/background_concrete"
-    android:orientation="vertical"
-    android:padding="@dimen/activity_content_margin">
 
-    <Button
-        android:id="@+id/btn_size_CF"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/name_button_size"
-        android:textColor="@color/black"
-        android:elevation="4dp"
-        android:textSize="20sp"/>
-
-    <LinearLayout
-        android:id="@+id/ll_size"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:background="@color/white"
+        android:background="@color/background_concrete"
         android:orientation="vertical"
-        android:visibility="gone"
-        android:gravity="center"
-        android:elevation="4dp">
+        android:padding="@dimen/activity_content_margin">
 
-        <TextView
-            android:id="@+id/tv_size_CM"
+        <Button
+            android:id="@+id/btn_size_CF"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:text="@string/name_button_size"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:elevation="4dp"
             android:gravity="center"
-            android:text="@string/enter_size"
-            android:textSize="24sp" />
-
-        <TableLayout
-            android:id="@+id/tableLayout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/activity_content_margin">
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:id="@+id/tv_x_CM"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/standart_margin"
-                    android:layout_marginRight="@dimen/standart_margin"
-                    android:text="@string/coordinate_x"
-                    android:textColor="@color/black"
-                    android:textSize="24sp" />
-
-                <EditText
-                    android:id="@+id/et_x_CM"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:inputType="number"
-                    android:maxLength="4"
-                    android:textColor="@color/black"
-                    android:textSize="24sp" />
-
-                <TextView
-                    android:id="@+id/tv_y_CM"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/coordinate_y"
-                    android:textColor="@color/black"
-                    android:textSize="24sp" />
-
-                <EditText
-                    android:id="@+id/et_y_CM"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:inputType="number"
-                    android:maxLength="4"
-                    android:textColor="@color/black"
-                    android:textSize="24sp" />
-
-                <TextView
-                    android:id="@+id/tv_z_CM"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/coordinate_z"
-                    android:textColor="@color/black"
-                    android:textSize="24sp" />
-
-                <EditText
-                    android:id="@+id/et_z_CM"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:inputType="number"
-                    android:maxLength="4"
-                    android:textColor="@color/black"
-                    android:textSize="24sp" />
-            </TableRow>
-
-
-        </TableLayout>
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="@dimen/activity_content_margin"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <TextView
+                android:id="@+id/tv_size_CM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/enter_size"
+                android:textSize="24sp" />
+
+            <TableLayout
+                android:id="@+id/tableLayout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_content_margin">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_x_CM"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/standart_margin"
+                        android:layout_marginRight="@dimen/standart_margin"
+                        android:text="@string/coordinate_x"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/et_x_CM"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:maxLength="4"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tv_y_CM"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/coordinate_y"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/et_y_CM"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:maxLength="4"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        android:id="@+id/tv_z_CM"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/coordinate_z"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/et_z_CM"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:maxLength="4"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:inputType="numberDecimal" />
+                </TableRow>
+
+
+            </TableLayout>
+
+            <RadioGroup
+                android:id="@+id/rg_filler_CF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/chad"
-                android:textSize="20sp" />
+                android:layout_margin="@dimen/activity_content_margin"
+                android:orientation="vertical">
 
-            <RadioButton
-                android:id="@+id/radio_red"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/chad"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_grid_CF"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/grid" />
+
+                <RadioButton
+                    android:id="@+id/rb_scree_CF"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/scree" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_concrete_mark_CF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:text="@string/name_button_mark_concrete"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_concrete_mark_CF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <RadioGroup
+                android:id="@+id/rg_mark_CM"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:text="@string/grid" />
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_content_margin"
+                android:orientation="vertical">
 
-            <RadioButton
-                android:id="@+id/radio_blue"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/choose_marc_concrete"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_m100_CF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:text="@string/m_100" />
+
+                <RadioButton
+                    android:id="@+id/rb_m150_CF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:text="@string/m_150" />
+
+                <RadioButton
+                    android:id="@+id/rb_m200_CF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:text="@string/m_200" />
+
+                <RadioButton
+                    android:id="@+id/rb_m250_CF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:text="@string/m_250" />
+
+
+                <RadioButton
+                    android:id="@+id/rb_m300_CF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:text="@string/m_300" />
+
+                <RadioButton
+                    android:id="@+id/rb_m350_CF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:text="@string/m_350" />
+
+                <RadioButton
+                    android:id="@+id/rb_m400_CF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:text="@string/m_400" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_size_of_filler_CF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:text="@string/name_button_size_of_filler"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_size_of_filler_CF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="4dp"
+            android:visibility="gone">
+
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:text="@string/scree" />
-        </RadioGroup>
+                android:layout_height="wrap_content"
+                android:id="@+id/rg_size_of_filler_CF"
+                android:layout_margin="@dimen/activity_content_margin">
 
-    </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/size_chad"
+                    android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/btn_concrete_mark_CF"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/name_button_mark_concrete"
-        android:textColor="@color/black"
-        android:elevation="4dp"
-        android:textSize="20sp"/>
 
+                <RadioButton
+                    android:id="@+id/rb_10_CF"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/mm_10" />
+
+                <RadioButton
+                    android:id="@+id/rb_40_CF"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/mm_40" />
+
+                <RadioButton
+                    android:id="@+id/rb_60_CF"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/mm_60" />
+
+                <RadioButton
+                    android:id="@+id/rb_80_CF"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/mm_80" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_price_CF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:text="@string/price"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_price_CF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_content_margin">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_price_cement_CM"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/standart_margin"
+                        android:layout_marginRight="@dimen/standart_margin"
+                        android:text="@string/price_cement"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/et_price_cement_CM"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_price_sand_CM"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/standart_margin"
+                        android:layout_marginRight="@dimen/standart_margin"
+                        android:text="@string/price_sand"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/et_price_sand_CM"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_price_filler_CM"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/standart_margin"
+                        android:layout_marginRight="@dimen/standart_margin"
+                        android:text="@string/price_filler"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/et_price_filler_CM"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+
+            </TableLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_result_CF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:textStyle="bold"
+            android:text="@string/name_button_result"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="50dp"
+            />
     <LinearLayout
-        android:id="@+id/ll_concrete_mark_CF"
+        android:id="@+id/ll_result_CF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:background="@color/white"
+        android:elevation="4dp"
         android:orientation="vertical"
         android:visibility="gone"
-        android:elevation="4dp">
-
-
-        <RadioGroup
-            android:id="@+id/rg_mark_CM"
+        android:padding="@dimen/activity_content_margin">
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/activity_content_margin"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/choose_marc_concrete"
-                android:textSize="20sp" />
-
-            <RadioButton
-                android:id="@+id/m100"
-                android:layout_width="wrap_content"
-                android:layout_height="42dp"
-                android:text="@string/m_100" />
-
-            <RadioButton
-                android:id="@+id/m150"
-                android:layout_width="wrap_content"
-                android:layout_height="42dp"
-                android:text="@string/m_150" />
-
-            <RadioButton
-                android:id="@+id/m200"
-                android:layout_width="wrap_content"
-                android:layout_height="42dp"
-                android:text="@string/m_200" />
-
-            <RadioButton
-                android:id="@+id/m250"
-                android:layout_width="wrap_content"
-                android:layout_height="42dp"
-                android:text="@string/m_250" />
-
-
-            <RadioButton
-                android:id="@+id/m300"
-                android:layout_width="wrap_content"
-                android:layout_height="42dp"
-                android:text="@string/m_300" />
-
-            <RadioButton
-                android:id="@+id/m350"
-                android:layout_width="wrap_content"
-                android:layout_height="42dp"
-                android:text="@string/m_350" />
-
-            <RadioButton
-                android:id="@+id/m400"
-                android:layout_width="wrap_content"
-                android:layout_height="42dp"
-                android:text="@string/m_400" />
-
-        </RadioGroup>
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/btn_size_of_filler_CF"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/name_button_size_of_filler"
-        android:textColor="@color/black"
-        android:elevation="4dp"
-        android:textSize="20sp"/>
-
-    <LinearLayout
-        android:id="@+id/ll_size_of_filler_CF"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:visibility="gone"
-        android:elevation="4dp">
-
-        <RadioGroup
+            android:text="Потрібно:"
+            android:gravity="center"
+            android:textSize="20sp"/>
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/activity_content_margin">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/size_chad"
-                android:textSize="20sp" />
-
-
-            <RadioButton
-                android:id="@+id/radio_red"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:text="@string/mm_10" />
-
-            <RadioButton
-                android:id="@+id/radio_blue"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:text="@string/mm_40" />
-
-            <RadioButton
-                android:id="@+id/radio_green"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:text="@string/mm_60" />
-
-            <RadioButton
-                android:id="@+id/radio_gray"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:text="@string/mm_80" />
-        </RadioGroup>
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/btn_price_CF"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/price"
-        android:textColor="@color/black"
-        android:elevation="4dp"
-        android:textSize="20sp"/>
-
-    <LinearLayout
-        android:id="@+id/ll_price_CF"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:orientation="vertical"
-        android:visibility="gone"
-        android:elevation="4dp">
-
-
-        <TableLayout
-            android:id="@+id/tableLayout"
-            android:layout_width="wrap_content"
+            android:id="@+id/tv_cement_CF"
+            android:text="Цементу:"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/activity_content_margin">
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:id="@+id/tv_price_cement_CM"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/standart_margin"
-                    android:layout_marginRight="@dimen/standart_margin"
-                    android:text="@string/price_cement"
-                    android:textSize="24sp" />
-
-                <EditText
-                    android:id="@+id/et_price_cement_CM"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:inputType="number"
-                    android:maxLength="4"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
-
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:id="@+id/tv_price_sand_CM"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/standart_margin"
-                    android:layout_marginRight="@dimen/standart_margin"
-                    android:text="@string/price_sand"
-                    android:textSize="24sp" />
-
-                <EditText
-                    android:id="@+id/et_price_sand_CM"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:inputType="number"
-                    android:maxLength="4"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:id="@+id/tv_price_filler_CM"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/standart_margin"
-                    android:layout_marginRight="@dimen/standart_margin"
-                    android:text="@string/price_filler"
-                    android:textSize="24sp" />
-
-                <EditText
-                    android:id="@+id/et_price_filler_CM"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:inputType="number"
-                    android:maxLength="4"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
-
-            </TableRow>
+            android:id="@+id/tv_sand_CF"
+            android:text="Піску:"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_scree_CF"
+            android:text="Наповнювача:"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_water_CF"
+            android:text="Води:~"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Пропорція[Ц:П:Н]"
+            android:gravity="center"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ratio_CF"
+            android:text="15:2:4:6"
+            android:gravity="center"
+            android:textSize="20sp"/>
 
 
-        </TableLayout>
+
     </LinearLayout>
 
 
-</LinearLayout>
-    </ScrollView>
+    </LinearLayout>
+</ScrollView>
