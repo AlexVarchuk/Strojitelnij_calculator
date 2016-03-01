@@ -80,10 +80,10 @@
                         android:id="@+id/et_y_CM"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
                         android:maxLength="4"
                         android:textColor="@color/black"
-                        android:textSize="24sp"
-                        android:inputType="numberDecimal" />
+                        android:textSize="24sp" />
 
                     <TextView
                         android:id="@+id/tv_z_CM"
@@ -97,10 +97,10 @@
                         android:id="@+id/et_z_CM"
                         android:layout_width="50dp"
                         android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
                         android:maxLength="4"
                         android:textColor="@color/black"
-                        android:textSize="24sp"
-                        android:inputType="numberDecimal" />
+                        android:textSize="24sp" />
                 </TableRow>
 
 
@@ -234,9 +234,9 @@
             android:visibility="gone">
 
             <RadioGroup
+                android:id="@+id/rg_size_of_filler_CF"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/rg_size_of_filler_CF"
                 android:layout_margin="@dimen/activity_content_margin">
 
                 <TextView
@@ -289,158 +289,345 @@
             android:background="@color/white"
             android:elevation="4dp"
             android:orientation="vertical"
+            android:padding="@dimen/activity_content_margin"
             android:visibility="gone">
 
 
-            <TableLayout
-                android:id="@+id/tableLayout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/activity_content_margin">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_price_cement_CM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_cement"
+                    android:textSize="20sp" />
 
-                    <TextView
-                        android:id="@+id/tv_price_cement_CM"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/standart_margin"
-                        android:layout_marginRight="@dimen/standart_margin"
-                        android:text="@string/price_cement"
-                        android:textSize="24sp" />
+                <EditText
+                    android:id="@+id/et_price_cement_CM"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|bottom"
+                    android:inputType="numberDecimal"
+                    android:maxLength="6"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
 
-                    <EditText
-                        android:id="@+id/et_price_cement_CM"
-                        android:layout_width="80dp"
-                        android:layout_height="wrap_content"
-                        android:inputType="number"
-                        android:maxLength="4"
-                        android:textColor="@color/black"
-                        android:textSize="18sp" />
+            </TableRow>
 
-                </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_price_sand_CM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_sand"
+                    android:textSize="20sp" />
 
-                    <TextView
-                        android:id="@+id/tv_price_sand_CM"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/standart_margin"
-                        android:layout_marginRight="@dimen/standart_margin"
-                        android:text="@string/price_sand"
-                        android:textSize="24sp" />
+                <EditText
+                    android:id="@+id/et_price_sand_CM"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|bottom"
+                    android:inputType="numberDecimal"
+                    android:maxLength="6"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
 
-                    <EditText
-                        android:id="@+id/et_price_sand_CM"
-                        android:layout_width="80dp"
-                        android:layout_height="wrap_content"
-                        android:inputType="number"
-                        android:maxLength="4"
-                        android:textColor="@color/black"
-                        android:textSize="18sp" />
+            </TableRow>
 
-                </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_price_filler_CM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_filler"
+                    android:textSize="20sp" />
 
-                    <TextView
-                        android:id="@+id/tv_price_filler_CM"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/standart_margin"
-                        android:layout_marginRight="@dimen/standart_margin"
-                        android:text="@string/price_filler"
-                        android:textSize="24sp" />
+                <EditText
+                    android:id="@+id/et_price_filler_CM"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|bottom"
+                    android:inputType="numberDecimal"
+                    android:maxLength="6"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
 
-                    <EditText
-                        android:id="@+id/et_price_filler_CM"
-                        android:layout_width="80dp"
-                        android:layout_height="wrap_content"
-                        android:inputType="number"
-                        android:maxLength="4"
-                        android:textColor="@color/black"
-                        android:textSize="18sp" />
-
-                </TableRow>
+            </TableRow>
 
 
-            </TableLayout>
         </LinearLayout>
 
         <Button
             android:id="@+id/btn_result_CF"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
             android:elevation="4dp"
-            android:textStyle="bold"
             android:text="@string/name_button_result"
             android:textColor="@color/black"
             android:textSize="16sp"
-            android:layout_marginTop="50dp"
-            />
-    <LinearLayout
-        android:id="@+id/ll_result_CF"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:elevation="4dp"
-        android:orientation="vertical"
-        android:visibility="gone"
-        android:padding="@dimen/activity_content_margin">
-        <TextView
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_result_CF"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Потрібно:"
-            android:gravity="center"
-            android:textSize="20sp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv_cement_CF"
-            android:text="Цементу:"
-            android:textSize="18sp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv_sand_CF"
-            android:text="Піску:"
-            android:textSize="18sp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv_scree_CF"
-            android:text="Наповнювача:"
-            android:textSize="18sp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv_water_CF"
-            android:text="Води:~"
-            android:textSize="18sp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Пропорція[Ц:П:Н]"
-            android:gravity="center"
-            android:textSize="20sp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv_ratio_CF"
-            android:text="15:2:4:6"
-            android:gravity="center"
-            android:textSize="20sp"/>
+            android:background="@color/white"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_content_margin"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Потрібно:"
+                android:textSize="20sp" />
 
 
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cement"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_cement_CF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|bottom"
+                    android:text="10"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/standart_margin"
+                android:background="@color/black" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sand"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_sand_CF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|bottom"
+                    android:text="12"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/standart_margin"
+                android:background="@color/black" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filler"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_scree_CF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|bottom"
+                    android:text="12"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/standart_margin"
+                android:background="@color/black" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/water"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_water_CF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|bottom"
+                    android:text="9"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/activity_content_margin"
+                android:background="@color/black" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/volume"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_volume_CF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|bottom"
+                    android:text="9"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/activity_content_margin"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/activity_content_margin"
+                android:text="Пропорція[Ц:П:Н]"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_ratio_CF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/activity_content_margin"
+                android:text="15:2:4:6"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/activity_content_margin"
+                android:text="@string/price"
+                android:textSize="20sp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/generic_price_cement"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_final_price_cement_CF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="..."
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/activity_content_margin"
+                android:background="@color/black" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/generic_price_sand"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_final_price_sand_CF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|bottom"
+                    android:text="..."
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/activity_content_margin"
+                android:background="@color/black" />
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/generic_price_filler"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_final_price_filler_CF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end|bottom"
+                    android:text="..."
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/activity_content_margin"
+                android:background="@color/black" />
+
+
+        </LinearLayout>
 
 
     </LinearLayout>

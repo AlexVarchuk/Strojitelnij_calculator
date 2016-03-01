@@ -35,4 +35,13 @@
     <string name="cement">Цементу [кг]: </string>
     <string name="sand">Піска [кг]: </string>
     <string name="filler">Наповнювача [кг]: </string>
+    <string name="volume">Загальний об’єм [м3]</string>
+    <string name="generic_price_cement">Загальна ціна цементу:</string>
+    <string name="generic_price_sand">Загальна ціна піска:</string>
+    <string name="generic_price_filler">Ціна наповнювача</string>
+    <string name="storage">Склад</string>
+    <string name="add">Додати</string>
+    <string name="number">Кількість</string>
+    <string name="length">Довжина[м]</string>
+    <string name="update">Обновить</string>
 </resources>

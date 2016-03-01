@@ -1,14 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:background="#757575">
 
-    <TextView
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_CutF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TAB 2"
-        android:id="@+id/tv_CF"
-        android:gravity="center"/>
+        android:orientation="vertical"
+        android:padding="@dimen/activity_content_margin">
 
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_storage_CutF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/storage"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_add_CutF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="@string/add"
+            android:textColor="@color/black" />
+        </LinearLayout>
+        <TableLayout
+            android:id="@+id/tr_CutF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/standart_margin" />
+
+
+        <Button
+            android:id="@+id/btn_result_CutF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name_button_result"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+</ScrollView>
